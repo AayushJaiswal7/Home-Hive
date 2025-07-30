@@ -1,0 +1,51 @@
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings">
+      <i class="fa-solid fa-suitcase-rolling"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings"><b>HomeHive</b></a>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <form class="d-flex" role="search">
+        <input class="form-control me-2 rounded-pill search-inp" type="search" placeholder="Search destinations" aria-label="Search"/>
+        <button class="btn btn-search rounded-pill  px-4 py-2 me-3" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+      </form>
+      </div>
+      <div class="navbar-nav ms-auto">
+  <a class="nav-link btn btn-primary rounded-pill shadow px-4 py-2 me-3" href="/listings/new" id="add-listing-btn">
+    Add New Hive
+  </a>
+  <div class="dropdown">
+    <button class="nav-link btn btn-primary rounded-pill shadow dropdown-toggle px-4" type="button" data-bs-toggle="dropdown" id="account-btn"
+      aria-expanded="false">
+      Account
+    </button>
+     <ul class="dropdown-menu dropdown-menu-end account-dropdown-menu p-3 border-0 shadow-lg rounded-4 animate__animated animate__fadeIn" style="min-width: 180px;">
+    <% if (!currUser) { %>
+      <li>
+        <a class="dropdown-item rounded-pill px-4 py-2 mb-2 fw-semibold text-center" href="/signup">Sign Up</a>
+      </li>
+      <li>
+        <a class="dropdown-item rounded-pill px-4 py-2 fw-semibold text-center" href="/login">Log in</a>
+      </li>
+    <% } %>
+    <% if (currUser) { %>
+      <li>
+        <a class="dropdown-item rounded-pill px-4 py-2 fw-semibold text-center" href="/logout">Log Out</a>
+      </li>
+    <% } %>
+  </ul>
+  </div>
+</div>
+
+    </div>
+  </div>
+</nav>

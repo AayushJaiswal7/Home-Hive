@@ -1,0 +1,163 @@
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+  flex: 1;  
+}
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-suitcase-rolling {
+  color: #fe424d;
+  font-size: 3rem;
+}
+.nav-link {
+  color: #fe424d !important;
+}
+/* footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text p {
+  font-weight: 400;
+}
+.listing-link {
+  text-decoration: none;
+}
+/* Card Effect */
+.card-img-overlay {
+  opacity: 0;
+  transition: 0.1s all;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.edit-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+/* show page */
+.show-img{
+  height: 30vh;
+}
+.btns{
+  display: flex;
+}
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter{
+  text-align: center;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+
+}
+.filter:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.btn-search i{
+    display: inline;
+    margin-right: 0.5rem;
+    border-radius:25rem;
+  }
+ 
+  .search-inp{
+    border-radius: 25px;
+    padding: 0.5 3rem 0.5 3rem;
+    font-size: 1rem;
+  }
+.search-inp:focus {
+  border-color: #fe424d;
+  box-shadow: 0 0 0 0.2rem rgba(223, 32, 45, 0.5);
+
+}
+
+
+.btn-search {
+  border: 1px solid transparent; /* No visible border initially */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  padding: 0 1rem 0 1rem;
+}
+
+.btn-search:active {
+  border-color: #fe424d;
+  box-shadow: 0 0 0 0.2rem rgba(254, 66, 77, 0.5);
+  outline: none;
+}
+
+
+#add-listing-btn:hover {
+  background-color: #fe424d !important; /* Change for desired hover color */
+  color: #fff !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* More elevated effect */
+}
+
+#account-btn:hover,
+#account-btn:focus {
+  background-color: #fe424d !important; /* Change to desired hover color */
+  color: #fff !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); 
+}
+.account-dropdown-menu {
+  min-width: 100% !important; /* Makes the dropdown at least as wide as the parent .dropdown */
+  left: 0;
+  right: 0;
+}
+
+
+
+#map { height: 400px; width: 60vh;
+ }
