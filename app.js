@@ -86,9 +86,9 @@ app.use((req,res,next)=>{
 });
 
 
-// app.get("/", (req, res) => {
-//     res.send("hi, i am root");
-// });
+app.get("/", (req, res) => {
+    res.render("listings/index.ejs",{listing})
+});
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
