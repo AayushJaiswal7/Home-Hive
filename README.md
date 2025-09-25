@@ -63,3 +63,8 @@ Runs on http://localhost:3000.
  * Images are stored in Cloudinary; URLs and filenames are saved in MongoDB
 
 * Uses method-override for HTTP verbs like PUT & DELETE in forms
+
+---
+## 🚀 Live Demo
+
+[**View the live application here!**](https://homehive-gzro.onrender.com/listings)
